@@ -171,6 +171,12 @@ footer {
     font-size: 11px;
     color: grey;
 }
+#time {
+    font-size: 10px;
+    color: grey;
+    margin-top: -6px;
+    margin-left: 40px;
+}
 /* stilizzazione header */
 header {
     display: flex;
