@@ -25,10 +25,39 @@
     background-color: blue;
     margin-top: -25px;
     margin-left: 140px;
+    display: flex;
 }
 aside {
     width: 35%;
     height: 100%;
     background-color: yellow;
-
+}
+.chat {
+    width: 75%;
+    height: 100%;
+    background-color: green;
+}
+header{
+    height: 70px;
+    width: 100%;
+    background-color: #ededed;
+    border-bottom: 2px solid #cdcdcd;
+}
+.testa {
+    height: 70px;
+    width: 100%;
+    background-color: #ededed;
+    border-right: 2px solid #cdcdcd;
+    border-bottom: 2px solid #cdcdcd;
+}
+main {
+    width: 100%;
+    height: calc(100% - 140px);
+    background-image: url(http://chiaveorgonica.altervista.org/wp-content/uploads/2015/10/whatsapp-wallpaper.jpg);
+    background-size: contain;
+}
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #ededed;
 }
