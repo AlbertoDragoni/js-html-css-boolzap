@@ -149,6 +149,10 @@ footer {
 .contatto {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.contatto:hover {
+    opacity: 0.5;
 }
 .contatto .fa-user-circle {
     margin-left: 6px;
@@ -166,4 +170,58 @@ footer {
     margin-top: 5px;
     font-size: 11px;
     color: grey;
+}
+/* stilizzazione header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.header-left .fa-user-circle {
+    color: lightgrey;
+    font-size: 50px;
+}
+.dati-accesso {
+    margin-left: 18px;
+}
+#ultimo-accesso {
+    margin-top: 5px;
+    font-size: 11px;
+    color: grey;
+}
+/* stilizzazione footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.emoticon .fa-smile {
+    margin-left: 15px;
+    color: grey;
+    font-size: 32px;
+}
+.scrivi-mess {
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.scrivi-mess p {
+    margin-left: 25px;
+    font-size: 13px;
+    color: grey;
+}
+.microphone .fa-microphone {
+    margin-right: 15px;
+    color: grey;
+    font-size: 32px;
 }
