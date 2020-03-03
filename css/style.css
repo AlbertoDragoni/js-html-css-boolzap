@@ -58,6 +58,7 @@ main {
     height: calc(100% - 140px);
     background-image: url(http://chiaveorgonica.altervista.org/wp-content/uploads/2015/10/whatsapp-wallpaper.jpg);
     background-size: contain;
+
 }
 footer {
     width: 100%;
@@ -231,4 +232,37 @@ footer {
     margin-right: 15px;
     color: grey;
     font-size: 32px;
+}
+/* stilizzazione main */
+.first-bubble, .second-bubble {
+    width: 160px;
+    height: 50px;
+    background-color: #dcf8c6;
+    border-radius: 6px;
+    margin-left: 480px;
+}
+.screen-chat {
+    padding-top: 22px;
+}
+.second-bubble {
+    margin-top: 22px;
+}
+#real-chat {
+    font-size: 13px;
+    padding-top: 14px;
+    text-align: center;
+}
+#time-chat {
+    margin-top: 4px;
+    margin-left: 125px;
+    font-size: 8px;
+    color: grey;
+}
+.third-bubble {
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 30px;
+    margin-top: 22px;
 }
