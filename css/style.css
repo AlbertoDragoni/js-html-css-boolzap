@@ -22,7 +22,7 @@
     font-family: 'Heebo', sans-serif;
     height: 100%;
     width: 78%;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     margin-top: -25px;
     margin-left: 140px;
     display: flex;
@@ -147,6 +147,7 @@ footer {
 }
 /* stilizzazione contatti */
 .contatto {
+    background-color: white;
     display: flex;
     align-items: center;
     cursor: pointer;
