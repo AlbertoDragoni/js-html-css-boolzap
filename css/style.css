@@ -22,7 +22,6 @@
     height: 100%;
     width: 78%;
     border: 1px solid black;
-    background-color: blue;
     margin-top: -25px;
     margin-left: 140px;
     display: flex;
@@ -30,12 +29,12 @@
 aside {
     width: 35%;
     height: 100%;
-    background-color: yellow;
+    /* overflow-y: auto; */
+    position: relative;
 }
 .chat {
     width: 75%;
     height: 100%;
-    background-color: green;
 }
 header{
     height: 70px;
@@ -60,4 +59,27 @@ footer {
     width: 100%;
     height: 70px;
     background-color: #ededed;
+    border-left: 2px solid #cdcdcd;
+}
+/* lavorazione aside */
+.ricevi-notifiche {
+    height: 75px;
+    background-color: lightblue;
+}
+.cerca-chat {
+    height: 45px;
+    background-color: green;
+}
+.contatti {
+    height: calc(100% - 190px);
+    overflow-y: scroll;
+}
+.contatto {
+    height: 70px;
+    border-top: 1px solid #cdcdcd
+}
+/* inizio stilizzazione testa */
+.testa-avatar .fa-user-circle {
+    color: lightgrey;
+    font-size: 50px;
 }
