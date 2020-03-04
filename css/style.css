@@ -213,25 +213,16 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-
 .emoticon .fa-smile {
     margin-left: 15px;
     color: grey;
     font-size: 32px;
 }
-.scrivi-mess {
+.scrivi-mess input {
     width: 500px;
-    height: 50px;
-    background-color: white;
+    height: 45px;
     border: 1px solid #cdcdcd;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-}
-.scrivi-mess p {
-    margin-left: 25px;
-    font-size: 13px;
-    color: grey;
+    border-radius: 6px;
 }
 .microphone .fa-microphone {
     margin-right: 15px;
@@ -252,10 +243,11 @@ footer {
 .second-bubble {
     margin-top: 22px;
 }
+
 #real-chat {
     font-size: 13px;
     padding-top: 14px;
-    text-align: center;
+    margin-left: 10px;
 }
 #time-chat {
     margin-top: 4px;
