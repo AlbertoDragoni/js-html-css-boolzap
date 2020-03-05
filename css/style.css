@@ -63,7 +63,7 @@ main {
     height: calc(100% - 140px);
     background-image: url(http://chiaveorgonica.altervista.org/wp-content/uploads/2015/10/whatsapp-wallpaper.jpg);
     background-size: contain;
-
+    overflow-y: auto;
 }
 footer {
     width: 100%;
@@ -244,10 +244,11 @@ footer {
 }
 .screen-chat {
     width: 100%;
+    height:
     padding-top: 22px;
 }
 .second-bubble {
-    /* margin-top: 22px; */
+    margin-top: 22px;
 }
 
 .real-chat {
