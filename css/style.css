@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
 .container {
     width: 100vw;
     height: 100vh;
@@ -235,21 +240,22 @@ footer {
     height: 50px;
     background-color: #dcf8c6;
     border-radius: 6px;
-    margin-left: 480px;
+    float: right;
 }
 .screen-chat {
+    width: 100%;
     padding-top: 22px;
 }
 .second-bubble {
-    margin-top: 22px;
+    /* margin-top: 22px; */
 }
 
-#real-chat {
+.real-chat {
     font-size: 13px;
     padding-top: 14px;
     margin-left: 10px;
 }
-#time-chat {
+.time-chat {
     margin-top: 4px;
     margin-left: 125px;
     font-size: 8px;
@@ -262,4 +268,7 @@ footer {
     border-radius: 6px;
     margin-left: 30px;
     margin-top: 22px;
+}
+.template {
+    display: none;
 }
