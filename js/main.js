@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.microphone').click(function(){
+    $('.paper-plane').click(function(){
         var testoInput = $('#text').val();
         $('#text').val('');
         var messaggio = $('.template .messaggio').clone();
