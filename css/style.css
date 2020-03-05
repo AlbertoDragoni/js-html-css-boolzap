@@ -133,25 +133,20 @@ footer {
     color: grey;
 }
 /* stilizzazione cerca chat */
-.finestra-ricerca {
-    width: 280px;
-    height: 33px;
-    background-color: white;
+.cerca-chat input {
+    width: 250px;
+    height: 30px;
     border: 1px solid #cdcdcd;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
+    border-radius: 6px;
 }
-.finestra-ricerca .fa-search {
+
+
+/* .finestra-ricerca .fa-search {
     margin-left: 6px;
     font-size: 16px;
     color: lightgrey;
 }
-.finestra-ricerca p {
-    margin-left: 20px;
-    font-size: 12px;
-    color: lightgrey;
-}
+
 /* stilizzazione contatti */
 .contatto {
     background-color: white;

@@ -4,7 +4,17 @@ $(document).ready(function(){
         setTimeout(messageReceived, 2000);
     });
 
-    var nomiPresenti = ['Laura', 'Marco', 'Mario', 'Alberto', 'Giacomo'];
+    $('#ricerca').keyup(function(event){
+        var carattereFiltro = $(this).val().toLowerCase();
+        $('.contatto').each(function(){
+            var nomeContatto =$(this).find('#nome').text().toLowerCase();
+            if (nomeContatto.includes(carattereFiltro)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        })
+    });
 
 
 
