@@ -17,9 +17,6 @@ $(document).ready(function(){
     });
 
 
-
-
-
     function messageSent() {
             var testoInput = $('#text').val();
             $('#text').val('');

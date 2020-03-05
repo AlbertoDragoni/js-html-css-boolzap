@@ -237,19 +237,18 @@ footer {
 .first-bubble, .second-bubble {
     width: 160px;
     height: 50px;
+    margin-right: 20px;
     background-color: #dcf8c6;
     border-radius: 6px;
     float: right;
 }
 .screen-chat {
     width: 100%;
-    height:
     padding-top: 22px;
 }
 .second-bubble {
     margin-top: 22px;
 }
-
 .real-chat {
     font-size: 13px;
     padding-top: 14px;
