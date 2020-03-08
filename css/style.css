@@ -242,6 +242,7 @@ footer {
     background-color: #dcf8c6;
     border-radius: 6px;
     float: right;
+    position: relative;
 }
 .screen-chat {
     width: 100%;
@@ -261,6 +262,12 @@ footer {
     font-size: 8px;
     color: grey;
 }
+.screen-chat .fa-angle-down {
+    position: absolute; top: 10px; right: 10px;
+    font-size: 16px;
+    color: grey;
+    cursor: pointer;
+}
 .third-bubble {
     width: 160px;
     height: 50px;
@@ -276,5 +283,23 @@ footer {
     display: none;
 }
 .screen-chat.active {
+    display: block;
+}
+.finestra-delete {
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+    display: none;
+    float: right;
+    margin-right: 20px;
+}
+.finestra-delete p {
+    padding-top: 8px;
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.finestra-delete.active {
     display: block;
 }

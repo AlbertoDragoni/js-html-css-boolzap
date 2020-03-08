@@ -2,6 +2,14 @@ $(document).ready(function(){
     $('.paper-plane').click(function(){
         messageSent();
         setTimeout(messageReceived, 2000);
+        scroll();
+    });
+    $('input').keydown(function(event){
+        if (event.which == 13) {
+            messageSent();
+            setTimeout(messageReceived, 2000);
+            scroll();
+        }
     });
 
     $('#ricerca').keyup(function(event){
@@ -28,11 +36,19 @@ $(document).ready(function(){
         })
     });
 
+    $('.fa-angle-down').click(function() {
+        $('.finestra-delete').addClass('active');
+    });
+
+    function scroll(){
+        var pixelScroll = $('.screen-chat.active').height();
+        $('.screen-chat.active').scrollTop(pixelScroll);
+    };
+
     function messageSent() {
             var testoInput = $('#text').val();
             $('#text').val('');
             var messaggio = $('.template .second-bubble').clone();
-            console.log(messaggio)
             messaggio.children('.real-chat').text(testoInput);
             messaggio.children('.time-chat').text(oraGiusta);
             $('.screen-chat.active').append(messaggio);
@@ -49,16 +65,6 @@ $(document).ready(function(){
         var hourMinute = new Date().getHours() + ':' + new Date().getMinutes();
         return hourMinute;
     }
-
-
-
-
-
-
-
-
-
-
 
 
 });
