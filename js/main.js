@@ -27,7 +27,6 @@ $(document).ready(function(){
     $('.contatto').click(function(){
         var cliccaNome = $(this).find('#nome').text();
         var utente = $(this).data('codice-utente');
-
         $('.screen-chat').each(function(){
             if ($(this).data('codice-utente') == utente) {
                 $('.screen-chat').removeClass('active');
@@ -36,8 +35,15 @@ $(document).ready(function(){
         })
     });
 
+    $('.contatto').click(function(){
+        var clickName = $(this).find('#nome').text();
+        $('.contact-header').text(clickName);
+        var srcImage = $(this).find('.my-avatar img').attr('src');
+        $('.header-left .my-avatar img').attr('src', srcImage);
+    });
+
     $('.fa-angle-down').click(function() {
-        $('.finestra-delete').addClass('active');
+        $(this).siblings('.finestra-delete').addClass('active');
     });
 
     function scroll(){
