@@ -27,6 +27,8 @@ $(document).ready(function(){
     $('.contatto').click(function(){
         var cliccaNome = $(this).find('#nome').text();
         var utente = $(this).data('codice-utente');
+        $('.contatto').removeClass('opac');
+        $(this).addClass('opac');
         $('.screen-chat').each(function(){
             if ($(this).data('codice-utente') == utente) {
                 $('.screen-chat').removeClass('active');

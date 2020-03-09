@@ -188,6 +188,9 @@ footer {
     margin-top: -6px;
     margin-left: 40px;
 }
+.opac {
+    opacity: 0.4;
+}
 /* stilizzazione header */
 header {
     display: flex;
