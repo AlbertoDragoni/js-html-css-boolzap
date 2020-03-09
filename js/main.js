@@ -42,8 +42,10 @@ $(document).ready(function(){
         $('.header-left .my-avatar img').attr('src', srcImage);
     });
 
-    $('.fa-angle-down').click(function() {
-        $(this).siblings('.finestra-delete').addClass('active');
+    $(document).on('click', '.fa-angle-down', function() {
+        console.log('elemento cliccato', $(this));
+        $('.finestra-delete').hide();
+         $(this).siblings('.finestra-delete').show();
     });
 
     function scroll(){
