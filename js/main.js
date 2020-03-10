@@ -4,7 +4,7 @@ $(document).ready(function(){
         setTimeout(messageReceived, 2000);
         scroll();
     });
-    
+
     $('.scrivi-mess input').keydown(function(event){
         if (event.which == 13) {
             messageSent();
@@ -62,7 +62,6 @@ $(document).ready(function(){
     function scroll(){
         var pixelScroll = $('.screen-chat.active').height();
         $('.screen-chat.active').scrollTop(pixelScroll);
-        console.log(pixelScroll);
     };
 
     function messageSent() {
