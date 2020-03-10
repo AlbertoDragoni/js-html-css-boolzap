@@ -53,6 +53,7 @@ $(document).ready(function(){
     function scroll(){
         var pixelScroll = $('.screen-chat.active').height();
         $('.screen-chat.active').scrollTop(pixelScroll);
+        console.log(pixelScroll);
     };
 
     function messageSent() {
