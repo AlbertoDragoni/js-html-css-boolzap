@@ -50,15 +50,6 @@ $(document).ready(function(){
          $(this).siblings('.finestra-delete').show();
     });
 
-    $('#text').focus(function(){
-        // $('.right-footer i').toggleClass('fa-microphone-alt', 'fa-paper-plane');
-        $('.fa-microphone-alt').addClass('invisible');
-        $('.fa-paper-plane').css('display', 'block');
-    }).blur(function(){
-        $('.fa-microphone-alt').removeClass('invisible');
-        $('.fa-paper-plane').css('display', 'none');
-    });
-
     function scroll(){
         var pixelScroll = $('.screen-chat.active').height();
         $('.screen-chat.active').scrollTop(pixelScroll);
@@ -67,26 +58,18 @@ $(document).ready(function(){
 
     function messageSent() {
             var testoInput = $('#text').val();
-            if (testoInput.trim().lenght > 0) {
-                $('#text').val('');
-                var messaggio = $('.template .second-bubble').clone();
-                messaggio.children('.real-chat').text(testoInput);
-                messaggio.children('.time-chat').text(oraGiusta);
-                $('.screen-chat.active').append(messaggio);
-            } else {
-                console.log('scrivi qualcosa, capra!');
-            }
-
+            $('#text').val('');
+            var messaggio = $('.template .second-bubble').clone();
+            messaggio.children('.real-chat').text(testoInput);
+            messaggio.children('.time-chat').text(oraGiusta);
+            $('.screen-chat.active').append(messaggio);
     };
 
     function messageReceived() {
-        var testoInput = $('#text').val();
-        if (testoInput.trim().lenght > 0) {
             var messaggioRisp = $('.template .third-bubble').clone();
             messaggioRisp.children('.real-chat').text('ok');
             messaggioRisp.children('.time-chat').text(oraGiusta);
             $('.screen-chat.active').append(messaggioRisp);
-        }
     };
 
     function oraGiusta() {
