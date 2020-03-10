@@ -58,18 +58,26 @@ $(document).ready(function(){
 
     function messageSent() {
             var testoInput = $('#text').val();
-            $('#text').val('');
-            var messaggio = $('.template .second-bubble').clone();
-            messaggio.children('.real-chat').text(testoInput);
-            messaggio.children('.time-chat').text(oraGiusta);
-            $('.screen-chat.active').append(messaggio);
+            if (testoInput.trim().lenght > 0) {
+                $('#text').val('');
+                var messaggio = $('.template .second-bubble').clone();
+                messaggio.children('.real-chat').text(testoInput);
+                messaggio.children('.time-chat').text(oraGiusta);
+                $('.screen-chat.active').append(messaggio);
+            } else {
+                console.log('scrivi qualcosa, capra!');
+            }
+
     };
 
     function messageReceived() {
+        var testoInput = $('#text').val();
+        if (testoInput.trim().lenght > 0) {
             var messaggioRisp = $('.template .third-bubble').clone();
             messaggioRisp.children('.real-chat').text('ok');
             messaggioRisp.children('.time-chat').text(oraGiusta);
             $('.screen-chat.active').append(messaggioRisp);
+        }
     };
 
     function oraGiusta() {
