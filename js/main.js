@@ -50,6 +50,15 @@ $(document).ready(function(){
          $(this).siblings('.finestra-delete').show();
     });
 
+    $('#text').focus(function(){
+        // $('.right-footer i').toggleClass('fa-microphone-alt', 'fa-paper-plane');
+        $('.fa-microphone-alt').addClass('invisible');
+        $('.fa-paper-plane').css('display', 'block');
+    }).blur(function(){
+        $('.fa-microphone-alt').removeClass('invisible');
+        $('.fa-paper-plane').css('display', 'none');
+    });
+
     function scroll(){
         var pixelScroll = $('.screen-chat.active').height();
         $('.screen-chat.active').scrollTop(pixelScroll);
