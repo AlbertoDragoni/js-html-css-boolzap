@@ -1,10 +1,10 @@
 $(document).ready(function(){
-    $('.paper-plane').click(function(){
+    $('.right-footer').click(function(){
         messageSent();
         setTimeout(messageReceived, 2000);
         scroll();
     });
-    $('input').keydown(function(event){
+    $('.scrivi-mess input').keydown(function(event){
         if (event.which == 13) {
             messageSent();
             setTimeout(messageReceived, 2000);
@@ -49,6 +49,14 @@ $(document).ready(function(){
         $('.finestra-delete').hide();
          $(this).siblings('.finestra-delete').show();
     });
+
+    $('#text').focus(function(){
+     $('.fa-microphone-alt').addClass('invisible');
+     $('.fa-paper-plane').css('display', 'block');
+ }).blur(function(){
+     $('.fa-microphone-alt').removeClass('invisible');
+     $('.fa-paper-plane').css('display', 'none');
+ });
 
     function scroll(){
         var pixelScroll = $('.screen-chat.active').height();

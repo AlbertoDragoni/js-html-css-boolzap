@@ -233,11 +233,21 @@ footer {
     border-radius: 6px;
     padding: 20px;
 }
-.paper-plane .fa-paper-plane {
+.right-footer .fa-paper-plane {
     margin-right: 15px;
     cursor: pointer;
     color: grey;
     font-size: 32px;
+    display: none;
+}
+.right-footer .fa-microphone-alt {
+    margin-right: 15px;
+    cursor: pointer;
+    color: grey;
+    font-size: 32px;
+}
+.fa-microphone-alt.invisible {
+    display: none;
 }
 /* stilizzazione main */
 .first-bubble, .second-bubble {
