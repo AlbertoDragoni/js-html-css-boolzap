@@ -4,6 +4,7 @@ $(document).ready(function(){
         setTimeout(messageReceived, 2000);
         scroll();
     });
+    
     $('.scrivi-mess input').keydown(function(event){
         if (event.which == 13) {
             messageSent();
