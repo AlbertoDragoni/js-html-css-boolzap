@@ -59,6 +59,10 @@ $(document).ready(function(){
      $('.fa-paper-plane').css('display', 'none');
  });
 
+    $(document).on('click', '#destroy', function() {
+        $(this).parents('.clearfix').remove();
+    });
+
     function scroll(){
         var pixelScroll = $('.screen-chat.active').height();
         $('.screen-chat.active').scrollTop(pixelScroll);
