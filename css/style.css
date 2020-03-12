@@ -250,7 +250,7 @@ footer {
     display: none;
 }
 /* stilizzazione main */
-.first-bubble, .second-bubble {
+.second-bubble {
     width: 160px;
     height: 50px;
     margin-right: 20px;
@@ -291,9 +291,7 @@ footer {
     margin-left: 30px;
     margin-top: 22px;
 }
-.template {
-    display: none;
-}
+
 .screen-chat {
     display: none;
 }
