@@ -62,41 +62,40 @@ $(document).ready(function(){
     $(document).on('click', '#destroy', function() {
         $(this).parents('.clearfix').remove();
     });
+// inizio handlebars---------------------------------------
 
-    function scroll(){
-        var pixelScroll = $('.screen-chat.active').height();
-        $('.screen-chat.active').scrollTop(pixelScroll);
+function messageSent() {
+    var source = $('#messaggio-template1').html();
+    var template = Handlebars.compile(source);
+    var datiMessaggio = {
+        testoMessaggio: $('#text').val()
     };
+    var templateMessaggio = template(datiMessaggio);
+    $('#text').val('');
+    $('.screen-chat.active').append(templateMessaggio);
+};
 
-    function messageSent() {
-            var testoInput = $('#text').val();
-            if (testoInput.trim().length > 0) {
-                $('#text').val('');
-                var messaggio = $('.template .second-bubble').clone();
-                messaggio.children('.real-chat').text(testoInput);
-                messaggio.children('.time-chat').text(oraGiusta);
-                $('.screen-chat.active').append(messaggio);
-            }
+function messageReceived() {
+    var source = $('#messaggio-template2').html();
+    var template = Handlebars.compile(source);
+    var rispMessaggio = {
+        testoRisposta: 'ok'
     };
+    console.log(rispMessaggio);
+    var templateMessaggio = template(rispMessaggio);
+    $('.screen-chat.active').append(templateMessaggio);
+};
 
-    function messageReceived() {
-        // var testoInput = $('#text').val();
-        // if (testoInput.trim().length > 0) {
-        //     var messaggioRisp = $('.template .third-bubble').clone();
-        //     messaggioRisp.children('.real-chat').text('ok');
-        //     messaggioRisp.children('.time-chat').text(oraGiusta);
-        //     $('.screen-chat.active').append(messaggioRisp);
-        // }
-            var messaggioRisp = $('.template .third-bubble').clone();
-            messaggioRisp.children('.real-chat').text('ok');
-            messaggioRisp.children('.time-chat').text(oraGiusta);
-            $('.screen-chat.active').append(messaggioRisp);
-    };
+// fine handlebars----------------------------------------------------
+
 
     function oraGiusta() {
         var hourMinute = new Date().getHours() + ':' + new Date().getMinutes();
         return hourMinute;
     }
-
+    function scroll(){
+        var pixelScroll = $('.screen-chat.active').height();
+        $('.screen-chat.active').scrollTop(pixelScroll);
+    };
 
 });

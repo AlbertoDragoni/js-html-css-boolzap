@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/8b28a66c17.js" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js'></script>
         <title>Boolzap</title>
     </head>
     <body>
@@ -150,251 +151,58 @@
                         </header>
                         <main>
                             <div class="screen-chat active" data-codice-utente='Fabio'>
-                                <div class="first-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">12.38</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">09.47</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Bene, grazie</p>
-                                    <p class="time-chat">15.31</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="screen-chat" data-codice-utente='Andrea'>
-                                <div class="first-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">12.38</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">09.47</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Bene, grazie</p>
-                                    <p class="time-chat">15.31</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="screen-chat" data-codice-utente='Giovanni'>
-                                <div class="first-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">12.38</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">09.47</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Bene, grazie</p>
-                                    <p class="time-chat">15.31</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="screen-chat" data-codice-utente='Ciccio'>
-                                <div class="first-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">12.38</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">09.47</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Bene, grazie</p>
-                                    <p class="time-chat">15.31</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="screen-chat" data-codice-utente='Alberto'>
-                                <div class="first-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">12.38</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">09.47</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Bene, grazie</p>
-                                    <p class="time-chat">15.31</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="screen-chat" data-codice-utente='Daniele'>
-                                <div class="first-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">12.38</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">09.47</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Bene, grazie</p>
-                                    <p class="time-chat">15.31</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
+
+
                             </div>
                             <div class="screen-chat" data-codice-utente='Elena'>
-                                <div class="first-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">12.38</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">09.47</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Bene, grazie</p>
-                                    <p class="time-chat">15.31</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="screen-chat" data-codice-utente='Federica'>
-                                <div class="first-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">12.38</p>
+
+                            </div>
+                            <!-- script template1 -->
+                            <script id="messaggio-template1" type="text/x-handlebars-template">
+                                <div>
+                                    <div class="second-bubble clearfix">
+                                        <i class="fas fa-angle-down"></i>
+                                        <p class="real-chat">{{testoMessaggio}}</p>
+                                        <p class="time-chat">00:00</p>
+                                    </div>
                                     <div class="finestra-delete">
                                         <p>Message info</p>
                                         <p id="destroy">Delete message</p>
                                     </div>
                                 </div>
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao come stai?</p>
-                                    <p class="time-chat">09.47</p>
+                            </script>
+                            <!-- script template2 -->
+                            <script id="messaggio-template2" type="text/x-handlebars-template">
+                                <div>
+                                    <div class="third-bubble clearfix">
+                                        <i class="fas fa-angle-down"></i>
+                                        <p class="real-chat">{{testoRisposta}}</p>
+                                        <p class="time-chat">00:00</p>
+                                    </div>
                                     <div class="finestra-delete">
                                         <p>Message info</p>
                                         <p id="destroy">Delete message</p>
                                     </div>
                                 </div>
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Bene, grazie</p>
-                                    <p class="time-chat">15.31</p>
-                                    <div class="finestra-delete">
-                                        <p>Message info</p>
-                                        <p id="destroy">Delete message</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="template">
-                                <div class="second-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao ciao</p>
-                                    <p class="time-chat">00:00</p>
-                                </div>
-                            </div>
-                            <div class="template">
-                                <div class="third-bubble clearfix">
-                                    <i class="fas fa-angle-down"></i>
-                                    <p class="real-chat">Ciao ciao</p>
-                                    <p class="time-chat">00:00</p>
-                                </div>
-                            </div>
+                            </script>
                         </main>
                         <footer>
                             <div class="emoticon">
