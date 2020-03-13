@@ -88,6 +88,67 @@ function messageReceived() {
 
 // fine handlebars----------------------------------------------------
 
+// ---handlebars con contatti ------------------------
+    var sourceContatti = $('#template-aside').html();
+    var templateContatti = Handlebars.compile(sourceContatti);
+
+
+    var contattiAside = [
+        {
+            dataCodiceUtente: 'Fabio',
+            imgAvatar: 'img/avataaars.png',
+            nome: 'Fabio',
+            spoilerChat: 'non so cosa dire'
+        },
+        {
+            dataCodiceUtente: 'Andrea',
+            imgAvatar: 'img/avataaars(1).png',
+            nome: 'Andrea',
+            spoilerChat: 'non so cosa dire'
+        },
+        {
+            dataCodiceUtente: 'Giovanni',
+            imgAvatar: 'img/avataaars(2).png',
+            nome: 'Giovanni',
+            spoilerChat: 'non so cosa dire'
+        },
+        {
+            dataCodiceUtente: 'Ciccio',
+            imgAvatar: 'img/avataaars(3).png',
+            nome: 'Ciccio',
+            spoilerChat: 'non so cosa dire'
+        },
+        {
+            dataCodiceUtente: 'Alberto',
+            imgAvatar: 'img/avataaars(4).png',
+            nome: 'Alberto',
+            spoilerChat: 'non so cosa dire'
+        },
+        {
+            dataCodiceUtente: 'Daniele',
+            imgAvatar: 'img/avataaars(5).png',
+            nome: 'Daniele',
+            spoilerChat: 'non so cosa dire'
+        },
+        {
+            dataCodiceUtente: 'Elena',
+            imgAvatar: 'img/avataaars(6).png',
+            nome: 'Elena',
+            spoilerChat: 'non so cosa dire'
+        },
+        {
+            dataCodiceUtente: 'Federica',
+            imgAvatar: 'img/avataaars.png',
+            nome: 'Federica',
+            spoilerChat: 'non so cosa dire'
+        }
+    ];
+    for (var i = 0; i < contattiAside.length; i++) {
+        var contattiUtente = templateContatti(contattiAside[i]);
+        $('.contatti').append(contattiUtente);
+    };
+
+// -----fine handlebars con contatti----------------------------------------
 
     function oraGiusta() {
         var hourMinute = new Date().getHours() + ':' + new Date().getMinutes();
